@@ -9,9 +9,10 @@
 <meta name="generator" content="pandoc" />
 
 
+<meta name="author" content="LouisMono" />
 
 
-<title>Speed and Distance</title>
+<title>R script</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -198,30 +199,32 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Speed and Distance</h1>
+<h1 class="title toc-ignore">R script</h1>
+<h4 class="author"><em>LouisMono</em></h4>
+<h4 class="date"><em>febbraio 2019</em></h4>
 
 </div>
 
 
-<div id="r-markdown" class="section level2">
-<h2>R Markdown</h2>
-<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
-<pre class="r"><code>summary(cars)</code></pre>
-<pre><code>##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00</code></pre>
-</div>
-<div id="including-plots" class="section level2">
-<h2>Including Plots</h2>
-<p>You can also embed plots, for example:</p>
-<p><img src="speed_and_distance_files/figure-html/pressure-1.png" width="672" /></p>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
-</div>
+<p>R script that generates our results.</p>
+<pre class="r"><code>source(&quot;poll.R&quot;)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    812 obs. of  16 variables:
+##  $ state           : Factor w/ 57 levels &quot;Alabama&quot;,&quot;Alaska&quot;,..: 37 53 16 56 39 11 10 39 11 43 ...
+##  $ startdate       : Date, format: &quot;2016-11-06&quot; &quot;2016-11-03&quot; ...
+##  $ enddate         : Date, format: &quot;2016-11-06&quot; &quot;2016-11-04&quot; ...
+##  $ pollster        : Factor w/ 196 levels &quot;ABC News/Washington Post&quot;,..: 195 130 148 95 149 87 132 132 65 65 ...
+##  $ grade           : Factor w/ 10 levels &quot;D&quot;,&quot;C-&quot;,&quot;C&quot;,&quot;C+&quot;,..: NA 7 10 9 9 6 8 8 5 5 ...
+##  $ samplesize      : int  8439 1238 800 1255 800 1200 884 870 2002 1963 ...
+##  $ population      : chr  &quot;lv&quot; &quot;lv&quot; &quot;lv&quot; &quot;lv&quot; ...
+##  $ rawpoll_clinton : num  46 48 39 46 44 46 46 47 44 44 ...
+##  $ rawpoll_trump   : num  44 43 46 40 44 49 45 45 48 40 ...
+##  $ rawpoll_johnson : num  6 1 6 4 3 3 2 3 3 6 ...
+##  $ rawpoll_mcmullin: num  NA NA NA NA NA NA NA NA NA NA ...
+##  $ adjpoll_clinton : num  44.8 47.4 39.4 46.1 44.2 ...
+##  $ adjpoll_trump   : num  41.6 42.3 45.7 41 45.1 ...
+##  $ adjpoll_johnson : num  7.87 2.21 6.06 2.9 2.34 ...
+##  $ adjpoll_mcmullin: num  NA NA NA NA NA NA NA NA NA NA ...
+##  $ spread          : num  0.02 0.05 -0.07 0.06 0 ...</code></pre>
 
 
 

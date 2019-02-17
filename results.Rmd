@@ -1,0 +1,12 @@
+---
+title: "R script"
+author: "LouisMono"
+date: " febbraio 2019"
+output: html_document
+---
+
+R script that generates our results.
+```{r, warning=FALSE, message=FALSE}
+source("poll.R")
+```
+

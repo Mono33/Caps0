@@ -1,5 +1,6 @@
 name: "cars"
 output_dir: "docs"
+include: ["import.R"]
 navbar:
   title: "Cars"
   left:
@@ -7,8 +8,8 @@ navbar:
       href: index.html
     - text: "Speed and Distance"
       href: speed_and_distance.html
-    - text: "script split"  
-      href: split.R
+    - text: "script poll"  
+      href: poll.R
 output:
   html_document:
     theme: cosmo 
