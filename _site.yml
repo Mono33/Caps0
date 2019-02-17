@@ -8,7 +8,7 @@ navbar:
     - text: "Speed and Distance"
       href: speed_and_distance.html
     - text: "script split"  
-      href: split.html
+      href: split.R
 output:
   html_document:
     theme: cosmo 
