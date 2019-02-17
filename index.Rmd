@@ -4,4 +4,4 @@ author: "LouisMono"
 
 ---
 
-Welcome to my page!
+Welcome to my page. This is a Car report template.
